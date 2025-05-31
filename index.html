@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>เรียนหุ้น 60 วันรู้เรื่อง</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+    :root {
+      --bg-light: #f9f9f9;
+      --bg-dark: #1e1e1e;
+      --text-light: #1a1a1a;
+      --text-dark: #f1f1f1;
+      --link-light: #007bff;
+      --link-dark: #66b0ff;
+    }
+
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      margin: 0;
+      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    .intro-links {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .intro-links a {
+      color: var(--link-light);
+      font-size: 1.1em;
+      display: inline-block;
+      margin: 8px 12px;
+      text-decoration: none;
+    }
+
+    .intro-links a:hover {
+      text-decoration: underline;
+    }
+
+    .dark-mode .intro-links a {
+      color: var(--link-dark);
+    }
+
+    .accordion,
+    .panel a {
+      font-family: 'Sarabun', sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    .accordion {
+      background-color: transparent;
+      color: var(--text-light);
+      cursor: pointer;
+      padding: 12px;
+      width: 100%;
+      text-align: left;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .dark-mode .accordion {
+      background-color: #2a2a2a;
+      color: var(--text-dark);
+      border: 1px solid #555;
+    }
+
+    .panel {
+      display: none;
+      background: white;
+      color: black;
+      border-radius: 6px;
+      padding: 10px 18px;
+      border: 1px solid #ddd;
+    }
+
+    .panel a {
+      display: block;
+      margin: 6px 0;
+      color: var(--link-light);
+      text-decoration: none;
+    }
+
+    .panel a:hover {
+      text-decoration: underline;
+    }
+
+    .dark-mode .panel {
+      background: #333;
+      color: white;
+    }
+
+    .dark-mode .panel a {
+      color: var(--link-dark);
+    }
+  </style>
+</head>
+<body>
+  <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+  <h1>📘 เรียนหุ้น 60 วันรู้เรื่อง<br><small style="font-size: 0.7em;">60 Days to Stock Investing Success</small></h1>
+
+  <div class="intro-links">
+    <a href="day/day1-10/day1.html">📘 เริ่มเรียนวันแรก</a>
+    <a href="pretest.html">📝 ทำแบบทดสอบก่อนเรียน</a>
+  </div>
+
+  <!-- เริ่ม Accordion -->
+  <button class="accordion">หมวดที่ 1: พื้นฐานตลาดหุ้น</button>
+  <div class="panel">
+    <a href="day/day1-10/day1.html" target="_blank">Day 1: หุ้นคืออะไร?</a>
+    <a href="day/day1-10/day2.html" target="_blank">Day 2: ตลาดหลักทรัพย์คืออะไร?</a>
+    <a href="day/day1-10/day3.html" target="_blank">Day 3: SET / MAI / IPO คืออะไร?</a>
+    <a href="day/day1-10/day4.html" target="_blank">Day 4: ใครคือผู้ลงทุนในตลาดหุ้น?</a>
+    <a href="day/day1-10/day5.html" target="_blank">Day 5: ความเสี่ยงและผลตอบแทนในหุ้น</a>
+    <a href="day/day1-10/day6.html" target="_blank">Day 6: เงินปันผลคืออะไร?</a>
+    <a href="day/day1-10/day7.html" target="_blank">Day 7: วิธีเปิดบัญชีหุ้น</a>
+    <a href="day/day1-10/day8.html" target="_blank">Day 8: การอ่านกระดานหุ้นเบื้องต้น</a>
+    <a href="day/day1-10/day9.html" target="_blank">Day 9: การส่งคำสั่งซื้อขายหุ้น</a>
+    <a href="day/day1-10/day10.html" target="_blank">Day 10: กฎเบื้องต้นของการลงทุนในหุ้นไทย</a>
+  </div>
+
+  <button class="accordion">หมวดที่ 2: การวิเคราะห์ปัจจัยพื้นฐาน</button>
+  <div class="panel">
+    <a href="day11.html" target="_blank">Day 11: การวิเคราะห์บริษัทจากงบการเงิน</a>
+    <a href="day12.html" target="_blank">Day 12: งบกำไรขาดทุนคืออะไร?</a>
+    <a href="day13.html" target="_blank">Day 13: งบดุล และกระแสเงินสด</a>
+    <a href="day14.html" target="_blank">Day 14: อัตราส่วนทางการเงินสำคัญ</a>
+    <a href="day15.html" target="_blank">Day 15: EPS / ROE / ROA คืออะไร?</a>
+    <a href="day16.html" target="_blank">Day 16: P/E, P/B และ Market Cap</a>
+    <a href="day17.html" target="_blank">Day 17: การวิเคราะห์อุตสาหกรรมและคู่แข่ง</a>
+    <a href="day18.html" target="_blank">Day 18: วิธีเลือกหุ้นพื้นฐานดี</a>
+    <a href="day19.html" target="_blank">Day 19: วิเคราะห์ข่าวเศรษฐกิจต่อหุ้น</a>
+    <a href="day20.html" target="_blank">Day 20: สรุปแนวทางการวิเคราะห์ VI (Value Investing)</a>
+  </div>
+  <button class="accordion">หมวดที่ 3: การวิเคราะห์ทางเทคนิค</button>
+  <div class="panel">
+  <a href="day21.html" target="_blank">Day 21: การอ่านกราฟแท่งเทียน (Candlestick)</a>
+  <a href="day22.html" target="_blank">Day 22: แนวรับ แนวต้าน เทรนด์ไลน์</a>
+  <a href="day23.html" target="_blank">Day 23: Indicator คืออะไร?</a>
+  <a href="day24.html" target="_blank">Day 24: Moving Average (MA)</a>
+  <a href="day25.html" target="_blank">Day 25: Relative Strength Index (RSI)</a>
+  <a href="day26.html" target="_blank">Day 26: MACD และ Signal Line</a>
+  <a href="day27.html" target="_blank">Day 27: Bollinger Bands</a>
+  <a href="day28.html" target="_blank">Day 28: การหาจุดเข้าออก (Entry/Exit Point)</a>
+  <a href="day29.html" target="_blank">Day 29: การใช้ Volume ประกอบการเทรด</a>
+  <a href="day30.html" target="_blank">Day 30: เทคนิคการวิเคราะห์ Technical ขั้นต้น</a>
+  </div>
+  <button class="accordion">หมวดที่ 4: การบริหารความเสี่ยงและจิตวิทยานักลงทุน</button>
+  <div class="panel">
+  <a href="day31.html" target="_blank">Day 31: การบริหารเงินลงทุน (Money Management)</a>
+  <a href="day32.html" target="_blank">Day 32: Cut Loss & Take Profit คืออะไร?</a>
+  <a href="day33.html" target="_blank">Day 33: การตั้ง Stop Loss อย่างมืออาชีพ</a>
+  <a href="day34.html" target="_blank">Day 34: การควบคุมอารมณ์ในการลงทุน</a>
+  <a href="day35.html" target="_blank">Day 35: จิตวิทยานักลงทุนมือใหม่ vs มือโปร</a>
+  <a href="day36.html" target="_blank">Day 36: ทำไมคนส่วนใหญ่ขาดทุนในตลาดหุ้น?</a>
+  <a href="day37.html" target="_blank">Day 37: สร้างวินัยในแผนการลงทุน</a>
+  <a href="day38.html" target="_blank">Day 38: ทำ Mindset ให้เหมาะกับการลงทุน</a>
+  <a href="day39.html" target="_blank">Day 39: สรุปเครื่องมือช่วยลดความเสี่ยง</a>
+  <a href="day40.html" target="_blank">Day 40: แบบฝึกหัดวางแผนความเสี่ยงของคุณเอง</a>
+  </div>
+  <button class="accordion">หมวดที่ 5: กลยุทธ์การเทรดและลงทุน</button>
+  <div class="panel">
+  <a href="day41.html" target="_blank">Day 41: กลยุทธ์ DCA (ลงทุนสม่ำเสมอ)</a>
+  <a href="day42.html" target="_blank">Day 42: กลยุทธ์ VI (ถือยาวตามพื้นฐาน)</a>
+  <a href="day43.html" target="_blank">Day 43: กลยุทธ์เทรดรายวัน (Day Trade)</a>
+  <a href="day44.html" target="_blank">Day 44: กลยุทธ์ Swing Trade</a>
+  <a href="day45.html" target="_blank">Day 45: การเล่นรอบตามแนวโน้ม</a>
+  <a href="day46.html" target="_blank">Day 46: การเก็งกำไรแบบ Breakout</a>
+  <a href="day47.html" target="_blank">Day 47: การตั้งเป้าหมายรายเดือน/รายปี</a>
+  <a href="day48.html" target="_blank">Day 48: การจัดพอร์ตหุ้นแบบง่าย</a>
+  <a href="day49.html" target="_blank">Day 49: กลยุทธ์สร้างรายได้แบบ Passive</a>
+  <a href="day50.html" target="_blank">Day 50: ทบทวนกลยุทธ์ทั้งหมดที่เรียนมา</a>
+  </div>
+  <button class="accordion">หมวดที่ 6: การฝึกวิเคราะห์หุ้นและสร้างระบบเทรด</button>
+  <div class="panel">
+  <a href="day51.html" target="_blank">Day 51: วิเคราะห์หุ้นจริง (ตัวอย่างที่ 1)</a>
+  <a href="day52.html" target="_blank">Day 52: วิเคราะห์หุ้นจริง (ตัวอย่างที่ 2)</a>
+  <a href="day53.html" target="_blank">Day 53: วิเคราะห์หุ้นจริง (ตัวอย่างที่ 3)</a>
+  <a href="day54.html" target="_blank">Day 54: เรียนรู้จากกรณีหุ้นที่ตกหนัก</a>
+  <a href="day55.html" target="_blank">Day 55: สร้างแผนการลงทุนส่วนตัว</a>
+  <a href="day56.html" target="_blank">Day 56: ฝึกเขียน Journal การลงทุน</a>
+  <a href="day57.html" target="_blank">Day 57: ทำ Checklist ก่อนซื้อหุ้น</a>
+  <a href="day58.html" target="_blank">Day 58: ทำ Checklist ก่อนขายหุ้น</a>
+  <a href="day59.html" target="_blank">Day 59: สรุปข้อผิดพลาดที่ควรหลีกเลี่ยง</a>
+  <a href="day60.html" target="_blank">Day 60: ประเมินผลตัวเอง + ทำ Post-Test</a>
+  </div>
+
+  <!-- เพิ่มหมวดอื่น ๆ ต่อได้ตามโครงสร้างเดียวกัน -->
+  
+  <script>
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+      document.querySelector('.theme-toggle').textContent =
+        document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+    <!DOCTYPE html>
+    <html lang="th">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Day1</title><!--Comment แก้ไขชื่อบทเรียน -->
+      <style>
+        :root {
+          --bg-light: #f9f9f9;
+          --bg-dark: #1e1e1e;
+          --text-light: #1a1a1a;
+          --text-dark: #f1f1f1;
+          --link-light: #007bff;
+          --link-dark: #66b0ff;
+        }
+        body {
+          font-family: 'Sarabun', sans-serif;
+          background-color: var(--bg-light);
+          color: var(--text-light);
+          margin: 0;
+          padding: 20px;
+          transition: 0.3s;
+        }
+        .dark-mode {
+          background-color: var(--bg-dark);
+          color: var(--text-dark);
+        }
+        h1 {
+          text-align: center;
+          font-size: 1.8em;
+          margin-bottom: 10px;
+          margin-top: 20px;
+        }
+        .theme-toggle {
+          position: absolute;
+          top: 15px;
+          right: 20px;
+          font-size: 1.5em;
+          cursor: pointer;
+        }
+
+        /* สไตล์สำหรับปุ่มนำทางด้านบนและด้านล่าง */
+        .nav-buttons-container {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0 20px;
+          box-sizing: border-box;
+          margin-top: 50px; /* เว้นระยะจากปุ่มธีม (สำหรับชุดบน) */
+          margin-bottom: 20px; /* เว้นระยะจากเนื้อหาถัดไป */
+        }
+
+        /* สไตล์สำหรับลิงก์ในปุ่มนำทาง */
+        .nav-buttons-container a {
+          background-color: transparent;
+          color: var(--link-light);
+          padding: 5px 10px;
+          border-radius: 5px;
+          text-decoration: none;
+          font-size: 0.9em;
+          transition: color 0.3s ease;
+        }
+
+        .nav-buttons-container a:hover {
+          text-decoration: underline;
+        }
+
+        .dark-mode .nav-buttons-container a {
+          color: var(--link-dark);
+        }
+
+        .dark-mode .nav-buttons-container a:hover {
+          text-decoration: underline;
+        }
+
+        .intro-links {
+          text-align: center;
+          margin: 20px 0;
+        }
+        .intro-links a {
+          color: var(--link-light);
+          font-size: 1.1em;
+          display: inline-block;
+          margin: 8px 12px;
+          text-decoration: none;
+        }
+        .intro-links a:hover {
+          text-decoration: underline;
+        }
+        .dark-mode .intro-links a {
+          color: var(--link-dark);
+        }
+
+        /* สไตล์สำหรับคอนเทนเนอร์ลิงก์ทดสอบด้านล่าง */
+        .bottom-links {
+          text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+          margin-top: 30px; /* เว้นระยะห่างจากปุ่มนำทางด้านบน */
+          margin-bottom: 20px; /* เว้นระยะห่างด้านล่าง */
+        }
+        .bottom-links a {
+          color: var(--link-light);
+          font-size: 1.1em;
+          display: inline-block;
+          margin: 8px 12px;
+          text-decoration: none;
+        }
+        .bottom-links a:hover {
+          text-decoration: underline;
+        }
+        .dark-mode .bottom-links a {
+          color: var(--link-dark);
+        }
+
+        .accordion {
+          background-color: none;
+          color: var(--text-light);
+          cursor: pointer;
+          padding: 12px;
+          width: 100%;
+          text-align: left;
+          border: none;
+          outline: none;
+          font-size: 1.1em;
+          margin-top: 10px;
+          border-radius: 6px;
+          transition: 0.3s;
+        }
+        .panel {
+          display: none;
+          background: white;
+          color: black;
+          border-radius: 6px;
+          padding: 10px 18px;
+          border: 1px solid #ddd;
+        }
+        .panel a {
+          display: block;
+          margin: 6px 0;
+          color: var(--link-light);
+          text-decoration: none;
+        }
+        .panel a:hover {
+          text-decoration: underline;
+        }
+        .dark-mode .panel {
+          background: #333;
+          color: white;
+        }
+        .dark-mode .accordion {
+          background-color: #444;
+          color: var(--text-dark);
+        }
+        .dark-mode .panel a {
+          color: var(--link-dark);
+        }
+      </style>
+    </head>
+    <body>
+      <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+
+      <div class="nav-buttons-container">
+        <a href="day1.html">◀️  บทเรียนก่อนหน้า</a><!--Comment แก้ไขลิงก์ -->
+        <a href="day3.html">บทเรียนถัดไป  ▶️</a><!--Comment แก้ไขลิงก์ -->
+      </div>
+
+      <h1>📘 เรียนหุ้น 60 วันรู้เรื่อง<br><small style="font-size: 0.7em;">60 Days to Stock Investing Success</small></h1>
+      <div class="intro-links"></div>
+
+      
+      <!-- นำเนื้อหามาวางตรงนี้ -->
+
+      
+
+      <!-- นำเนื้อหามาวางตรงนี้ -->
+      
+      <div class="nav-buttons-container">
+        <a href="day1.html">◀️ บทเรียนก่อนหน้า</a><!--Comment แก้ไขลิงก์ -->
+        <a href="day3.html">บทเรียนถัดไป ▶️</a><!--Comment แก้ไขลิงก์ -->
+      </div>
+
+      <div class="bottom-links">
+        <a href="ex/exdayxx.html">📝 ทำแบบทดสอบหลังเรียน</a><!--Comment แก้ไขลิงก์ -->
+      </div>
+
+      <script>
+        const acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            const panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        function toggleTheme() {
+          document.body.classList.toggle("dark-mode");
+          document.querySelector('.theme-toggle').textContent =
+            document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+        }
+      </script>
+    </body>
+    </html>
